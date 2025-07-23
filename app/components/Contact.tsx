@@ -53,7 +53,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      sendEmail('service_wo8z5x5', 'template_6zilg8q'); // To Aashra
+      sendEmail('service_wo8z5x5', 'template_6zilg8q'); // To me
       sendEmail('service_wo8z5x5', 'template_u0lcevg'); // To user
     }
   };
