@@ -159,6 +159,9 @@ h1 {
   background: none;
   font-size: 20px;
 }
+.h-i{
+  color: white;
+}
 .name {
   font-family: "Kaushan Script", cursive;
   letter-spacing: 0.1rem;
