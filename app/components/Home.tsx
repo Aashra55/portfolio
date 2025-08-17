@@ -36,7 +36,7 @@ const Home = () => {
         </p>
         <ul className="social-icons">
           <li className="social-icon">
-            <a href="https://www.linkedin.com/..." className="icons-link"><FaLinkedinIn className='i h-i'/></a>
+            <a href="https://www.linkedin.com/in/aashra-saleem-7047a0315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="icons-link"><FaLinkedinIn className='i h-i'/></a>
           </li>
           <li className="social-icon">
             <a href="https://github.com/Aashra55" className="icons-link"><FaGithub className='i h-i'/></a>
