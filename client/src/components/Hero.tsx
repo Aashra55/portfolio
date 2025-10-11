@@ -34,8 +34,8 @@ const Hero = () => {
     >
       {/* Overlay */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95"
-        initial={{ opacity: 0 }}
+        className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background/85"
+        initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       />
