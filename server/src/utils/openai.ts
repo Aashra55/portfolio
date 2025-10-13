@@ -45,7 +45,7 @@ Your behavior rules:
 
   const data = await response.json();
 
-  // 👇 Add this line here to see what Gemini actually sends back
+  // To see what Gemini actually sends back
   console.log("Gemini raw response:", JSON.stringify(data, null, 2));
 
   return (
