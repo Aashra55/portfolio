@@ -23,7 +23,7 @@ export const useChatbot = () => {
 
     const API_BASE = "https://portfolio-w2sz.vercel.app/"
     try {
-      const res = await fetch(`${API_BASE}/api/chat`, {
+      const res = await fetch(`${API_BASE}api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: content, history: messages }),
