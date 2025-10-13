@@ -4,14 +4,15 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
-    "Next.js",
     "React.js",
-    "TypeScript",
+    "Next.js",
+    "Vite",
     "JavaScript",
-    "Tailwind CSS",
+    "TypeScript",
     "HTML",
     "CSS",
-    "Vite",
+    "Tailwind CSS",
+    "Bootstrap",
     "Python",
     "Streamlit",
     "Node.js",
