@@ -4,6 +4,7 @@ import heroBackground from "../assets/hero-background.jpg";
 import Typed from "typed.js";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import CursorGlow from "./CursorGlow";
 
 const Hero = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const Hero = () => {
         backgroundPosition: "center",
       }}
     >
+      <CursorGlow />
       {/* Overlay */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background/85"
