@@ -12,7 +12,7 @@ const About = () => {
     "HTML",
     "CSS",
     "Tailwind CSS",
-    "Bootstrap",
+    "BootStrap",
     "Python",
     "Streamlit",
     "Node.js",
