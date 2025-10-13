@@ -1,12 +1,6 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.askGemini = askGemini;
-const dotenv_1 = __importDefault(require("dotenv"));
-dotenv_1.default.config();
-async function askGemini(message, history = []) {
+import dotenv from "dotenv";
+dotenv.config();
+export async function askGemini(message, history = []) {
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

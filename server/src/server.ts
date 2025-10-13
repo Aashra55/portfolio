@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import chatRoute from "./routes/chat"
+import chatRoute from "./routes/chat.js"
 
 dotenv.config();
 const app = express();
