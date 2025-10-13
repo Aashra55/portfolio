@@ -21,8 +21,9 @@ export const useChatbot = () => {
     setMessages(prev => [...prev, userMessage]);
     setIsLoading(true);
 
+    const API_BASE = "https://portfolio-w2sz.vercel.app/"
     try {
-      const res = await fetch("http://localhost:5000/api/chat", {
+      const res = await fetch(`${API_BASE}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: content, history: messages }),
