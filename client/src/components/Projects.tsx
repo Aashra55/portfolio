@@ -86,7 +86,7 @@ const Projects = () => {
     {
       title: "Sticky Notes App",
       description: "A digital sticky notes application that allows users to create, edit, and organize notes with ease — featuring a clean and modern interface for quick note-taking and management.",
-      tech: ["React.js", "JavaScript", "CSS", "MongoDB", "Express.js", "Node.js"],
+      tech: ["React.js", "JavaScript", "CSS", "MongoDB", "Express.js", "Node.js", "JWT Authentication"],
       github: "https://github.com/Aashra55/ReactJS_Projects/tree/main/Sticky-Notes",
       demo: "https://react-js-projects-pc8o.vercel.app/",
     }
