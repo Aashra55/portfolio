@@ -13,9 +13,12 @@ const About = () => {
     "CSS",
     "Tailwind CSS",
     "BootStrap",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Git & GitHub",
     "Python",
     "Streamlit",
-    "Node.js",
     "Agentic AI",
   ];
 
@@ -85,11 +88,15 @@ const About = () => {
             viewport={{ once: true }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Hi there! I'm <span className="text-primary font-semibold">Aashra</span>, 
-              a passionate frontend developer who loves turning ideas into beautiful, functional web experiences. 
-              With a strong foundation in modern web technologies, I specialize in building responsive, user-friendly 
-              applications that not only look great but perform seamlessly. Whether it's crafting pixel-perfect UIs or 
-              optimizing for the best user experience, I'm always excited to take on new challenges and learn along the way.
+              Hi there! I'm{" "}
+              <span className="text-primary font-semibold">Aashra</span>, a
+              passionate frontend developer who loves turning ideas into
+              beautiful, functional web experiences. With a strong foundation in
+              modern web technologies, I specialize in building responsive,
+              user-friendly applications that not only look great but perform
+              seamlessly. Whether it's crafting pixel-perfect UIs or optimizing
+              for the best user experience, I'm always excited to take on new
+              challenges and learn along the way.
             </p>
 
             <motion.div

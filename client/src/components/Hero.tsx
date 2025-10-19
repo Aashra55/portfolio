@@ -9,7 +9,7 @@ import CursorGlow from "./CursorGlow";
 const Hero = () => {
   useEffect(() => {
     const typed = new Typed(".auto-type", {
-      strings: ["Frontend Web Developer", "Agentic AI Developer"],
+      strings: ["Full Stack Developer", "Agentic AI Developer"],
       typeSpeed: 120,
       backSpeed: 50,
       loop: true,

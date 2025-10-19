@@ -83,6 +83,13 @@ const Projects = () => {
       github: "https://github.com/Aashra55/AI-Chatbot/tree/master",
       demo: "https://ai-chatbot-nm5j66t5l4wrxexkzquqjz.streamlit.app/",
     },
+    {
+      title: "Sticky Notes App",
+      description: "A digital sticky notes application that allows users to create, edit, and organize notes with ease — featuring a clean and modern interface for quick note-taking and management.",
+      tech: ["React.js", "JavaScript", "CSS", "MongoDB", "Express.js", "Node.js"],
+      github: "https://github.com/Aashra55/ReactJS_Projects/tree/main/Sticky-Notes",
+      demo: "https://react-js-projects-pc8o.vercel.app/",
+    }
   ];
 
   // Parent container animation (stagger effect)
