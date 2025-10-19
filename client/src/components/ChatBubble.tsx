@@ -52,8 +52,8 @@ export const ChatBubble = () => {
                     <MessageCircle className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-sm">Assistant</h3>
-                    <p className="text-xs opacity-90">Aashra Saleem's Portfolio</p>
+                    <h3 className="font-semibold text-sm">Personal AI Assistant</h3>
+                    <p className="text-xs opacity-90">Helping you explore Aashra Saleem's work</p>
                   </div>
                 </div>
                 <div className="flex gap-2">
