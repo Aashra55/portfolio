@@ -53,7 +53,7 @@ export const ChatBubble = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-sm">Personal AI Assistant</h3>
-                    <p className="text-xs opacity-90">Helping you explore Aashra Saleem's work</p>
+                    <p className="text-xs opacity-90">Helping you explore Aashra's work</p>
                   </div>
                 </div>
                 <div className="flex gap-2">

@@ -39,7 +39,6 @@ This portfolio is designed to:
 1. **Clone the repository**
 ```bash
 git clone https://github.com/Aashra55/portfolio.git
-cd portfolio
 ```
 
 2. **Install dependencies**
