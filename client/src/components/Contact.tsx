@@ -19,6 +19,58 @@ const Contact = () => {
   const isValidEmail = (email: string) =>
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
+  // Block fake emails
+
+  const isFakeEmail = (email: string) => {
+    if (!email) return true;
+    const lower = email.toLowerCase();
+
+    // Block if local-part contains placeholder words
+    const blockedLocalParts = [
+      "example",
+      "test",
+      "demo",
+      "user",
+      "abc",
+      "xyz",
+      "no-reply",
+      "noreply",
+    ];
+    for (const p of blockedLocalParts) {
+      // check "example@" or local part equals example
+      if (
+        lower.startsWith(p + "@") ||
+        lower.includes("+" + p) ||
+        lower.split("@")[0] === p
+      ) {
+        return true;
+      }
+    }
+
+    // Block exact obvious example domains
+    const blockedExactDomains = ["example.com", "example.org"];
+    const domain = lower.split("@")[1] || "";
+    if (blockedExactDomains.includes(domain)) return true;
+
+    // Disposable / throwaway email domains (short list — extend if needed)
+    const disposableDomains = [
+      "mailinator.com",
+      "yopmail.com",
+      "10minutemail.com",
+      "tempmail.com",
+      "trashmail.com",
+      "guerrillamail.com",
+      "dispostable.com",
+      "maildrop.cc",
+    ];
+    if (disposableDomains.includes(domain)) return true;
+
+    // Block emails missing dot in domain (already covered by isValidEmail but extra safety)
+    if (!domain.includes(".")) return true;
+
+    return false;
+  };
+
   const validateForm = () => {
     if (!form.name || !form.email || !form.message) {
       alert("All fields are required.");
@@ -26,6 +78,10 @@ const Contact = () => {
     }
     if (!isValidEmail(form.email)) {
       alert("Please enter a valid email address.");
+      return false;
+    }
+    if (isFakeEmail(form.email)) {
+      toast.error("Please enter a valid email address.");
       return false;
     }
     return true;
@@ -89,7 +145,10 @@ const Contact = () => {
             >
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Name
                   </label>
                   <Input
@@ -103,7 +162,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Email
                   </label>
                   <Input
@@ -118,7 +180,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Message
                   </label>
                   <Textarea
@@ -191,7 +256,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-medium">LinkedIn</p>
-                      <p className="text-sm text-muted-foreground">Aashra Saleem</p>
+                      <p className="text-sm text-muted-foreground">
+                        Aashra Saleem
+                      </p>
                     </div>
                   </a>
                 </div>
